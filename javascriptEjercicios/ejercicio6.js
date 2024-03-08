@@ -6,14 +6,17 @@
 
 function grupo(sexo, nombre) {
 
-  sexo = prompt("Ingrese el sexo: ");
-  nombre = prompt("Ingrese el nombre: ");
+  sexo = prompt("Ingrese el sexo: ").toLowerCase();
+  nombre = prompt("Ingrese el nombre: ").toLowerCase();
 
-  if (sexo.charAt(0) == "hombre".toLocaleLowerCase() && nombre <= "m") {
-    alert("Usted corresponde al grupo A")
+  if (sexo == "mujer" && nombre < "m") {
+    alert("Usted es de el grupo A")
   }
-  if (sexo.charAt(0) == "mujer".toLocaleLowerCase() && nombre >= "n") {
-    alert("Usted corresponde al grupo B")
+  else if (sexo == "hombre" && nombre > "n") {
+    alert("Usted es de el grupo A")
+  }
+  else {
+    alert("Usted es de el grupo B")
   }
 }
 grupo()
