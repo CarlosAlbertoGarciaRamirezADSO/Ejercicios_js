@@ -9,7 +9,8 @@ if(a === b && b === c){
     alert("Los 3 numeros son iguales: ")
 }else{
     let numeromaximo = Math.max(a,b,c);
-    let numerominimo = Math.min(a,b,c);
+    let numerominimo = Math.min(a, b, c);
+  
     if(a === numeromaximo){
         alert(`El numero mayo es ${a}`)
     }else if(b == numeromaximo){
